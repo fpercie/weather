@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weatherv2</title>
+    <link rel="stylesheet" href="weatherv2.css" />
+    <script
+      src="https://kit.fontawesome.com/bb610becec.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="parent">
+      <h1 class="title">Weather</h1>
+      <div class="search">
+        <input type="text" class="searchbar" id="input" />
+        <button class="searchbtn" onclick="displayweather()">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <h1 class="currenttemp" id="currenttemp"></h1>
+      <div id="currenticon"></div>
+    </div>
+  </body>
+  <script src="weatherv2.js"></script>
+</html>
