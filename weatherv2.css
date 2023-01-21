@@ -14,6 +14,18 @@ body {
   justify-content: center;
 }
 
+.title {
+  margin-bottom: 70px;
+  font-size: 80px;
+  color: #e5d81f;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
 .searchbar {
   width: 300px;
   height: 50px;
@@ -23,18 +35,6 @@ body {
   font-size: 40px;
   font-weight: 600;
   margin-right: 20px;
-}
-
-.search {
-  display: flex;
-  align-items: center;
-  margin-bottom: 50px;
-}
-
-.title {
-  margin-bottom: 70px;
-  font-size: 80px;
-  color: #e5d81f;
 }
 
 .searchbtn {
@@ -61,6 +61,19 @@ body {
   border-radius: 30px;
   background-color: #0e25bb;
   justify-content: center;
+  align-items: top;
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.tempandicon {
+  display: flex;
+  align-items: center;
+  height: 200px;
+  justify-content: center;
 }
 
 .currenttemp {
@@ -72,15 +85,6 @@ body {
 }
 
 .weathericon2 {
-  width: 100px;
+  width: 120px;
   background: transparent;
-}
-
-.flexItem {
-  display: flex;
-  align-items: center;
-}
-
-.tempandicon {
-  justify-content: start;
 }

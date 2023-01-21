@@ -18,4 +18,6 @@ async function displayweather() {
   document.getElementById(
     "currenticon"
   ).innerHTML = `<img class="weathericon2" src="${cityWeather.current.condition.icon}">`;
+
+  document.getElementById("data").classList.add("visible");
 }
