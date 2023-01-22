@@ -62,11 +62,12 @@ body {
   background-color: #0e25bb;
   justify-content: center;
   align-items: top;
-  display: none;
+  opacity: 0;
 }
 
 .visible {
-  display: block;
+  opacity: 1;
+  transition: opacity 0.8s linear;
 }
 
 .tempandicon {
@@ -82,6 +83,7 @@ body {
   margin-top: 40px;
   background-color: transparent;
   color: #ffffff;
+  margin-right: 10px;
 }
 
 .weathericon2 {
