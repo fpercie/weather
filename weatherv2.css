@@ -54,7 +54,8 @@ body {
   font-size: 20px;
 }
 
-.data {
+.datacurrent,
+.dataforecast {
   display: flex;
   height: 500px;
   width: 400px;
@@ -64,6 +65,9 @@ body {
   align-items: center;
   flex-direction: column;
   opacity: 0;
+  margin-left: 50px;
+  margin-right: 50px;
+  border: solid 3px #030330;
 }
 
 .visible {
@@ -83,33 +87,94 @@ body {
 .weathericon2 {
   width: 120px;
   background: transparent;
+  margin-bottom: 15px;
+}
+
+.wind {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  margin-top: 15px;
+  font-size: 20px;
+  flex-direction: column;
+  color: #ffffff;
+  background-color: #0e2b57;
+  border-radius: 30px;
+  width: 150px;
+  margin-right: 20px;
+  border: solid 2px #fabb0d;
+}
+
+.precipitation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  margin-top: 15px;
+  font-size: 20px;
+  flex-direction: column;
+  color: #ffffff;
+  background-color: #0e2b57;
+  border-radius: 30px;
+  width: 200px;
+  border: solid 2px #fabb0d;
+}
+
+.tempandtempicon {
+  background-color: #0e2b57;
+  width: 370px;
+  height: 130px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  border: solid 2px #fabb0d;
 }
 
 .windandprecipitation {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80px;
-  margin-top: 15px;
-  font-size: 25px;
-  flex-direction: column;
-  color: #ffffff;
-  background-color: #306bc2;
-  border-radius: 30px;
-  width: 250px;
+  width: 400px;
+  height: 100px;
 }
 
-.currentprecipitation {
-  margin-top: -20px;
-}
-
-.tempandtempicon {
-  background-color: #306bc2;
-  width: 320px;
-  height: 150px;
-  border-radius: 30px;
+.alldata {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+}
+
+.forecasthour {
+  background-color: #0e2b57;
+  border: solid 2px #fabb0d;
+  border-radius: 30px;
+  height: 200px;
+  width: 150px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: top;
+  flex-direction: column;
+}
+
+.forecasthourhalf {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.forecasthourhour {
+  font-size: 35px;
+  color: #d9dedf;
+}
+
+.forecasthourtemp {
+  font-size: 50px;
+  color: #ffffff;
+  margin-top: -20px;
 }

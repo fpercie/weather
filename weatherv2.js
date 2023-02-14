@@ -8,14 +8,6 @@ async function getWeatherFromCityApi(city) {
   return data;
 }
 
-async function getWeatherFromCityApi(city) {
-  const response = await fetch(
-    `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}`
-  );
-  const data = await response.json();
-  return data;
-}
-
 async function displayweather() {
   const city = document.getElementById("input").value;
   const cityWeather = await getWeatherFromCityApi(city);
@@ -28,10 +20,11 @@ async function displayweather() {
   ).innerHTML = `<img class="weathericon2" src="${cityWeather.current.condition.icon}">`;
 
   document.getElementById("currentwind").innerHTML =
-    "Wind: " + cityWeather.current.wind_kph;
+    "Wind: " + cityWeather.current.wind_kph + " Kph";
 
   document.getElementById("currentprecipitation").innerHTML =
     "Precipitation: " + cityWeather.current.precip_mm + " mm";
 
-  document.getElementById("data").classList.add("visible");
+  document.getElementById("datacurrent").classList.add("visible");
+  document.getElementById("dataforecast").classList.add("visible");
 }
