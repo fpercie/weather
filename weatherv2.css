@@ -60,8 +60,8 @@ body {
   width: 400px;
   border-radius: 30px;
   background-color: #0e25bb;
-  justify-content: center;
-  align-items: top;
+  justify-content: top;
+  align-items: center;
   flex-direction: column;
   opacity: 0;
 }
@@ -69,14 +69,6 @@ body {
 .visible {
   opacity: 1;
   transition: opacity 0.8s linear;
-}
-
-.tempandicon {
-  display: flex;
-  align-items: center;
-  height: 200px;
-  justify-content: center;
-  margin-top: -230px;
 }
 
 .currenttemp {
@@ -95,16 +87,29 @@ body {
 
 .windandprecipitation {
   display: flex;
-  align-items: left;
+  align-items: center;
   justify-content: center;
   height: 80px;
-  margin-left: 20px;
-  margin-top: -45px;
+  margin-top: 15px;
   font-size: 25px;
   flex-direction: column;
   color: #ffffff;
+  background-color: #306bc2;
+  border-radius: 30px;
+  width: 250px;
 }
 
 .currentprecipitation {
   margin-top: -20px;
+}
+
+.tempandtempicon {
+  background-color: #306bc2;
+  width: 320px;
+  height: 150px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
 }
