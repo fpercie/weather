@@ -54,8 +54,7 @@ body {
   font-size: 20px;
 }
 
-.datacurrent,
-.dataforecast {
+.datacurrent {
   display: flex;
   height: 500px;
   width: 400px;
@@ -65,8 +64,18 @@ body {
   align-items: center;
   flex-direction: column;
   opacity: 0;
-  margin-left: 50px;
-  margin-right: 50px;
+  border: solid 3px #030330;
+}
+
+.dataforecast {
+  display: flex;
+  height: 500px;
+  width: 400px;
+  border-radius: 30px;
+  background-color: #0e25bb;
+  justify-content: space-evenly;
+  align-items: center;
+  opacity: 0;
   border: solid 3px #030330;
 }
 
@@ -143,8 +152,9 @@ body {
 
 .alldata {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 50px;
 }
 
 .forecasthour {
@@ -153,19 +163,12 @@ body {
   border-radius: 30px;
   height: 200px;
   width: 150px;
-  margin-left: 10px;
-  margin-right: 10px;
   display: flex;
   align-items: center;
   justify-content: top;
   flex-direction: column;
-}
-
-.forecasthourhalf {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .forecasthourhour {
