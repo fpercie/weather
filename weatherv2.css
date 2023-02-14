@@ -2,6 +2,10 @@
   .parent {
     scale: 85%;
   }
+
+  .title {
+    margin-top: -100px;
+  }
 }
 
 * {
