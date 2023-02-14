@@ -15,16 +15,25 @@
     <div class="parent">
       <h1 class="title">Weather</h1>
       <div class="search">
-        <input type="text" class="searchbar" id="input" />
+        <input
+          type="text"
+          class="searchbar"
+          id="input"
+          placeholder="Enter the city"
+        />
         <button class="searchbtn" onclick="displayweather()">
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
       </div>
-      <div class="tempandicon"></div>
-      <div class="data">
-        <h1 class="currenttemp flexItem" id="currenttemp"></h1>
-        <div class="flexItem" id="currenticon"></div>
-      </div>
+      <div class="data" id="data">
+        <div class="tempandicon">
+          <h1 class="currenttemp" id="currenttemp"></h1>
+          <div class="weathericon2" id="currenticon"></div>
+        </div>
+        <div class="windandprecipitation">
+          <p id="currentwind"></p>
+          <p class="currentprecipitation" id="currentprecipitation"></p>
+        </div>
       </div>
     </div>
   </body>
