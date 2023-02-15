@@ -71,7 +71,7 @@ body {
 
 .datacurrent {
   display: flex;
-  height: 500px;
+  height: 600px;
   width: 400px;
   border-radius: 30px;
   background-color: #0e25bb;
@@ -84,7 +84,7 @@ body {
 
 .dataforecast {
   display: flex;
-  height: 500px;
+  height: 600px;
   width: 400px;
   border-radius: 30px;
   background-color: #0e25bb;
@@ -111,7 +111,7 @@ body {
 .weathericon2 {
   width: 120px;
   background: transparent;
-  margin-bottom: 15px;
+  margin-bottom: 3px;
 }
 
 .wind {
@@ -176,7 +176,7 @@ body {
   background-color: #0e2b57;
   border: solid 2px #fabb0d;
   border-radius: 30px;
-  height: 200px;
+  height: 250px;
   width: 150px;
   display: flex;
   align-items: center;
