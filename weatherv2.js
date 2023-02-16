@@ -34,6 +34,17 @@ async function displayweather() {
   document.getElementById("currentprecipitation").innerHTML =
     "Precipitation: " + cityWeather.current.precip_mm + " mm";
 
+  document.getElementById("humidityporcentage").innerHTML =
+    cityWeather.current.humidity + "%";
+
+  document.getElementById("pressuremb").innerHTML =
+    cityWeather.current.pressure_mb + " mb";
+
+  document.getElementById("sunrisetime").innerHTML =
+    cityWeather.current.sunrise;
+
+  document.getElementById("sunsettime").innerHTML = cityWeather.current.sunset;
+
   document.getElementById("datacurrent").classList.add("visible");
   document.getElementById("dataforecast").classList.add("visible");
 }

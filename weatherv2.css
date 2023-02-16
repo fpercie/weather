@@ -199,44 +199,75 @@ body {
   margin-top: -20px;
 }
 
-.pressure {
+.sunriseandsunset {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: top;
   height: 300px;
-  width: 100px;
+  width: 250px;
   margin-top: 40px;
-  font-size: 20px;
   flex-direction: column;
   color: #ffffff;
   background-color: #0e2b57;
   border-radius: 30px;
   border: solid 2px #fabb0d;
   margin-left: 20px;
+}
+
+.pressure {
+  display: flex;
+  align-items: center;
+  justify-content: top;
+  height: 130px;
+  width: 160px;
+  flex-direction: column;
+  color: #ffffff;
+  background-color: #0e2b57;
+  border-radius: 30px;
+  border: solid 2px #fabb0d;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.pressuremb {
+  margin-top: -10px;
+  font-size: 35px;
 }
 
 .humidity {
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 300px;
-  width: 230px;
-  margin-top: 40px;
-  font-size: 20px;
+  justify-content: top;
+  height: 130px;
+  width: 160px;
   flex-direction: column;
   color: #ffffff;
   background-color: #0e2b57;
   border-radius: 30px;
   border: solid 2px #fabb0d;
   margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 40px;
 }
 
-.pressureandhumidity {
+.humidityporcentage {
+  margin-top: -10px;
+  font-size: 35px;
+}
+
+.pressurehumidityastro {
   display: flex;
   align-items: center;
   justify-content: left;
   width: 400px;
   height: 300px;
+}
+
+.pressureandhumidity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
 }
 
 .forecasthouricon {
@@ -252,4 +283,15 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: -30px;
+}
+
+.sunrisetime {
+  margin-top: -10px;
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+
+.sunsettime {
+  margin-top: -10px;
+  font-size: 35px;
 }
