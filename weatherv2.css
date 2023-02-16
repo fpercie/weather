@@ -142,8 +142,9 @@ body {
   color: #ffffff;
   background-color: #0e2b57;
   border-radius: 30px;
-  width: 200px;
+  width: 190px;
   border: solid 2px #fabb0d;
+  margin-right: 20px;
 }
 
 .tempandtempicon {
