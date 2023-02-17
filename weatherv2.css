@@ -6,6 +6,14 @@
   .title {
     margin-top: -100px;
   }
+
+  .searchbtn:hover {
+    transform: none;
+  }
+
+  .forecastday:hover {
+    transform: none;
+  }
 }
 
 * {
@@ -82,7 +90,7 @@ body {
   border: solid 3px #030330;
 }
 
-.dataforecast {
+.dataforecasthour {
   display: flex;
   height: 600px;
   width: 400px;
@@ -92,11 +100,6 @@ body {
   align-items: center;
   opacity: 0;
   border: solid 3px #030330;
-}
-
-.visible {
-  opacity: 1;
-  transition: opacity 0.8s linear;
 }
 
 .currenttemp {
@@ -190,7 +193,7 @@ body {
 
 .forecasthourhour {
   font-size: 35px;
-  color: #d9dedf;
+  color: #0057f8;
 }
 
 .forecasthourtemp {
@@ -294,4 +297,46 @@ body {
 .sunsettime {
   margin-top: -10px;
   font-size: 35px;
+}
+
+.dataforecastday {
+  display: flex;
+  height: 600px;
+  width: 400px;
+  border-radius: 30px;
+  background-color: #0e25bb;
+  justify-content: space-evenly;
+  align-items: center;
+  opacity: 0;
+  border: solid 3px #030330;
+}
+.forecastday {
+  background-color: #0e2b57;
+  border: solid 2px #fabb0d;
+  border-radius: 30px;
+  height: 250px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: top;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.forecastdayday {
+  color: #0057f8;
+}
+
+.forecastday:hover {
+  transform: scale(1.1);
+}
+
+.forecastday:active {
+  transform: scale(1);
+}
+
+.visible {
+  opacity: 1;
+  transition: opacity 0.8s linear;
 }

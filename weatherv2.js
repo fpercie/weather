@@ -46,7 +46,8 @@ async function displayweather() {
   document.getElementById("sunsettime").innerHTML = cityWeather.current.sunset;
 
   document.getElementById("datacurrent").classList.add("visible");
-  document.getElementById("dataforecast").classList.add("visible");
+  document.getElementById("dataforecasthour").classList.add("visible");
+  document.getElementById("dataforecastday").classList.add("visible");
 }
 
 //weather forecast
@@ -95,6 +96,19 @@ async function displayForecast() {
   document.getElementById(
     "forecasthouricon12h"
   ).innerHTML = `<img class="forecasthouricon" src="${forecast12h.forecast.forecastday[0].hour[0].condition.icon}">`;
+}
+
+async function getAstroFromCityApi(city) {
+  const response = await fetch(
+    `https://api.weatherapi.com/v1/astro.json?key=${API_KEY}&q=${city}`
+  );
+  const data = await response.json();
+  return data;
+}
+
+async function displayastro() {
+  const city = document.getElementById("input").value;
+  const cityWeather = await getWeatherFromCityApi(city);
 }
 
 //hours
