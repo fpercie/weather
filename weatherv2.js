@@ -132,3 +132,35 @@ document.getElementById("forecasthour3h").innerHTML = forecastHour3h;
 document.getElementById("forecasthour6h").innerHTML = forecastHour6h;
 document.getElementById("forecasthour9h").innerHTML = forecastHour9h;
 document.getElementById("forecasthour12h").innerHTML = forecastHour12h;
+
+//weekdays for forecast
+
+const weekdays = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+
+const currentDate = new Date();
+const currentWeekday = currentDate.getDay();
+
+const twoDaysLaterWeekday = (currentWeekday + 2) % 7;
+const twoDaysLaterWeekdayString = weekdays[twoDaysLaterWeekday];
+
+document.getElementById("weekdayin2days").innerHTML = twoDaysLaterWeekdayString;
+
+const ThreeDaysLaterWeekday = (currentWeekday + 3) % 7;
+const ThreeDaysLaterWeekdayString = weekdays[ThreeDaysLaterWeekday];
+
+document.getElementById("weekdayin3days").innerHTML =
+  ThreeDaysLaterWeekdayString;
+
+const FourDaysLaterWeekday = (currentWeekday + 4) % 7;
+const FourDaysLaterWeekdayString = weekdays[FourDaysLaterWeekday];
+
+document.getElementById("weekdayin4days").innerHTML =
+  FourDaysLaterWeekdayString;
