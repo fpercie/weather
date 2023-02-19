@@ -102,19 +102,27 @@ body {
   border: solid 3px #030330;
 }
 
-.currenttemp {
-  font-size: 90px;
-  margin-left: 40px;
-  margin-top: 40px;
-  background-color: transparent;
+.currentempbox {
+  font-size: 25px;
+  margin-left: 110px;
+  margin-top: -100px;
   color: #ffffff;
   margin-right: 10px;
+  background-color: #030330;
+  border-radius: 30px;
+  height: 100px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .weathericon2 {
-  width: 120px;
+  width: 80px;
   background: transparent;
-  margin-bottom: 3px;
+  margin-top: 12px;
+  margin-right: -30px;
+  border-radius: 30px;
 }
 
 .wind {
@@ -156,9 +164,9 @@ body {
   height: 130px;
   border-radius: 30px;
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 10px;
   border: solid 2px #fabb0d;
 }
 
@@ -202,19 +210,37 @@ body {
   margin-top: -20px;
 }
 
-.sunriseandsunset {
+.rainandsnowchances {
   display: flex;
   align-items: center;
   justify-content: top;
-  height: 300px;
+  height: 200px;
   width: 250px;
-  margin-top: 40px;
+  margin-top: 150px;
   flex-direction: column;
   color: #ffffff;
   background-color: #0e2b57;
   border-radius: 30px;
   border: solid 2px #fabb0d;
   margin-left: 20px;
+}
+
+.uvlevelbox {
+  background-color: #0e2b57;
+  height: 70px;
+  width: 150px;
+  border-radius: 30px;
+  border: solid 2px #fabb0d;
+  margin-top: 20px;
+  margin-left: -220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.currentuv {
+  font-size: 20px;
+  color: #ffffff;
 }
 
 .pressure {
@@ -264,6 +290,7 @@ body {
   justify-content: left;
   width: 400px;
   height: 300px;
+  margin-top: -100px;
 }
 
 .pressureandhumidity {
@@ -288,15 +315,25 @@ body {
   margin-top: -30px;
 }
 
-.sunrisetime {
-  margin-top: -10px;
+.chancestodayrain {
+  margin-top: 10px;
   margin-bottom: 20px;
-  font-size: 35px;
+  font-size: 20px;
 }
 
-.sunsettime {
+.chancestodayraindata {
   margin-top: -10px;
-  font-size: 35px;
+  font-size: 40px;
+  margin-bottom: -10px;
+}
+
+.chancestodaysnowdata {
+  font-size: 40px;
+  margin-top: -10px;
+}
+
+.chancestodaysnow {
+  font-size: 20px;
 }
 
 .dataforecastday {
@@ -339,4 +376,28 @@ body {
 .visible {
   opacity: 1;
   transition: opacity 0.8s linear;
+}
+
+.daytemprange {
+  display: flex;
+  flex-direction: column;
+  margin-left: -25px;
+  height: 100px;
+  margin-top: 15px;
+  width: 120px;
+  font-size: 15px;
+  background-color: #030330;
+  border-radius: 30px;
+  align-items: center;
+}
+
+.maxtemp {
+  margin-bottom: -20px;
+  font-size: 40px;
+  margin-top: 5px;
+  color: #e67760;
+}
+
+.mintemp {
+  color: #59b1ec;
 }

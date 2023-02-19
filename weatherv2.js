@@ -40,14 +40,12 @@ async function displayweather() {
   document.getElementById("pressuremb").innerHTML =
     cityWeather.current.pressure_mb + " mb";
 
-  document.getElementById("sunrisetime").innerHTML =
-    cityWeather.current.sunrise;
-
-  document.getElementById("sunsettime").innerHTML = cityWeather.current.sunset;
-
   document.getElementById("datacurrent").classList.add("visible");
   document.getElementById("dataforecasthour").classList.add("visible");
   document.getElementById("dataforecastday").classList.add("visible");
+
+  document.getElementById("currentuv").innerHTML =
+    "UV Index: " + cityWeather.current.uv;
 }
 
 //weather forecast
@@ -96,19 +94,20 @@ async function displayForecast() {
   document.getElementById(
     "forecasthouricon12h"
   ).innerHTML = `<img class="forecasthouricon" src="${forecast12h.forecast.forecastday[0].hour[0].condition.icon}">`;
-}
 
-async function getAstroFromCityApi(city) {
-  const response = await fetch(
-    `https://api.weatherapi.com/v1/astro.json?key=${API_KEY}&q=${city}`
-  );
-  const data = await response.json();
-  return data;
-}
+  const cityWeather = await getForecast(city, currentDate);
 
-async function displayastro() {
-  const city = document.getElementById("input").value;
-  const cityWeather = await getWeatherFromCityApi(city);
+  document.getElementById("maxtemp").innerHTML =
+    Math.round(cityWeather.forecast.forecastday[0].day.maxtemp_c) + "°C";
+
+  document.getElementById("mintemp").innerHTML =
+    Math.round(cityWeather.forecast.forecastday[0].day.mintemp_c) + "°C";
+
+  document.getElementById("chanceofraintoday").innerHTML =
+    cityWeather.forecast.forecastday[0].day.daily_chance_of_rain + "%";
+
+  document.getElementById("chanceofsnowtoday").innerHTML =
+    cityWeather.forecast.forecastday[0].day.daily_chance_of_snow + "%";
 }
 
 //hours

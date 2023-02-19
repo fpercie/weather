@@ -29,7 +29,15 @@
       <div class="alldata">
         <div class="datacurrent" id="datacurrent">
           <div class="tempandtempicon">
-            <h1 class="currenttemp" id="currenttemp"></h1>
+            <div class="currenttempandtemprange">
+              <div class="daytemprange">
+                <h1 class="maxtemp" id="maxtemp"></h1>
+                <h1 class="mintemp" id="mintemp"></h1>
+              </div>
+              <div class="currentempbox">
+                <h1 class="currenttemp" id="currenttemp"></h1>
+              </div>
+            </div>
             <div class="weathericon2" id="currenticon"></div>
           </div>
           <div class="windandprecipitation">
@@ -40,12 +48,15 @@
               <p id="currentprecipitation"></p>
             </div>
           </div>
+          <div class="uvlevelbox">
+            <h1 class="currentuv" id="currentuv"></h1>
+          </div>
           <div class="pressurehumidityastro">
-            <div class="sunriseandsunset">
-              <h1>Sunrise</h1>
-              <h2 class="sunrisetime" id="sunrisetime"></h2>
-              <h1>Sunset</h1>
-              <h2 class="sunsettime" id="sunsettime"></h2>
+            <div class="rainandsnowchances">
+              <h1 class="chancestodayrain">Chance of rain</h1>
+              <h2 class="chancestodayraindata" id="chanceofraintoday"></h2>
+              <h1 class="chancestodaysnow">Chance of snow</h1>
+              <h2 class="chancestodaysnowdata" id="chanceofsnowtoday"></h2>
             </div>
             <div class="pressureandhumidity">
               <div class="humidity">
@@ -97,17 +108,25 @@
           <div>
             <button class="forecastday">
               <h1 class="forecastdayday">Tomorrow</h1>
+              <h2 id="maxtemptomorrow" class="maxtempforecastday"></h2>
+              <h2 id="mintemptomorrow" class="mintempforecastday"></h2>
             </button>
             <button class="forecastday">
               <h1 class="forecastdayday" id="weekdayin3days"></h1>
+              <h2 id="maxtemp2days" class="maxtempforecastday"></h2>
+              <h2 id="mintemp2days" class="mintempforecastday"></h2>
             </button>
           </div>
           <div>
             <button class="forecastday">
               <h1 class="forecastdayday" id="weekdayin2days"></h1>
+              <h2 id="maxtemp3days" class="maxtempforecastday"></h2>
+              <h2 id="mintemp3days" class="mintempforecastday"></h2>
             </button>
             <button class="forecastday">
               <h1 class="forecastdayday" id="weekdayin4days"></h1>
+              <h2 id="maxtemp4days" class="maxtempforecastday"></h2>
+              <h2 id="mintemp4days" class="mintempforecastday"></h2>
             </button>
           </div>
         </div>
