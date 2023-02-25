@@ -5,6 +5,7 @@ const API_KEY = "a76aca2cbf214ceb941193109221012";
 async function displayData() {
   await displayweather();
   await displayForecast();
+  await displayAstronomy();
 }
 
 //current weather
@@ -20,6 +21,13 @@ async function getWeatherFromCityApi(city) {
 async function displayweather() {
   const city = document.getElementById("input").value;
   const cityWeather = await getWeatherFromCityApi(city);
+
+  //do so when user for example types la the output  is Los angeles, USA
+
+  document.getElementById("weatherinformationforcity").innerHTML =
+    "Weather information for " + city;
+
+  //////////////////////////////////////////////////////////////////////
 
   document.getElementById("currenttemp").innerHTML =
     Math.round(cityWeather.current.temp_c) + "°C";
@@ -108,6 +116,28 @@ async function displayForecast() {
 
   document.getElementById("chanceofsnowtoday").innerHTML =
     cityWeather.forecast.forecastday[0].day.daily_chance_of_snow + "%";
+}
+
+//astronomy
+
+async function getAstronomy(city, date) {
+  const response = await fetch(
+    `https://api.weatherapi.com/v1/astronomy.json?key=${API_KEY}&q=${city}&dt=${date}`
+  );
+  const data = await response.json();
+  return data;
+}
+
+async function displayAstronomy() {
+  const city = document.getElementById("input").value;
+  const currentDate = new Date().toISOString().slice(0, 10);
+  const cityWeather = await getAstronomy(city, currentDate);
+
+  document.getElementById("sunreise").innerHTML =
+    "Sunrise: " + cityWeather.astronomy.astro.sunrise;
+
+  document.getElementById("sunset").innerHTML =
+    "Sunset: " + cityWeather.astronomy.astro.sunset;
 }
 
 //hours

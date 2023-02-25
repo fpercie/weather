@@ -79,7 +79,7 @@ body {
 
 .datacurrent {
   display: flex;
-  height: 600px;
+  height: 700px;
   width: 400px;
   border-radius: 30px;
   background-color: #0e25bb;
@@ -92,7 +92,7 @@ body {
 
 .dataforecasthour {
   display: flex;
-  height: 600px;
+  height: 700px;
   width: 400px;
   border-radius: 30px;
   background-color: #0e25bb;
@@ -189,7 +189,7 @@ body {
   background-color: #0e2b57;
   border: solid 2px #fabb0d;
   border-radius: 30px;
-  height: 250px;
+  height: 300px;
   width: 150px;
   display: flex;
   align-items: center;
@@ -232,7 +232,7 @@ body {
   border-radius: 30px;
   border: solid 2px #fabb0d;
   margin-top: 20px;
-  margin-left: -220px;
+  margin-left: -200px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -247,7 +247,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: top;
-  height: 130px;
+  height: 150px;
   width: 160px;
   flex-direction: column;
   color: #ffffff;
@@ -256,6 +256,7 @@ body {
   border: solid 2px #fabb0d;
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: -10px;
 }
 
 .pressuremb {
@@ -276,7 +277,7 @@ body {
   border: solid 2px #fabb0d;
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .humidityporcentage {
@@ -301,18 +302,18 @@ body {
 }
 
 .forecasthouricon {
-  height: 120px;
+  height: 130px;
 }
 
 .houricondiv {
   background-color: #032250;
   border-radius: 30px;
-  height: 100px;
-  width: 100px;
+  height: 140px;
+  width: 125px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -30px;
+  margin-top: -20px;
 }
 
 .chancestodayrain {
@@ -338,7 +339,7 @@ body {
 
 .dataforecastday {
   display: flex;
-  height: 600px;
+  height: 700px;
   width: 400px;
   border-radius: 30px;
   background-color: #0e25bb;
@@ -351,7 +352,7 @@ body {
   background-color: #0e2b57;
   border: solid 2px #fabb0d;
   border-radius: 30px;
-  height: 250px;
+  height: 300px;
   width: 150px;
   display: flex;
   align-items: center;
@@ -400,4 +401,29 @@ body {
 
 .mintemp {
   color: #59b1ec;
+}
+
+.sunriseandsunset {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  margin-top: 45px;
+  font-size: 15px;
+  color: #ffffff;
+  background-color: #0e2b57;
+  border-radius: 30px;
+  width: 350px;
+  border: solid 2px #fabb0d;
+}
+
+.sunreise {
+  margin-left: 40px;
+}
+
+.weatherinformationforcity {
+  color: #ffffff;
+  font-size: 25px;
+  background-color: #030330;
+  border-radius: 30px;
 }
