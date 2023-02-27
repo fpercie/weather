@@ -22,10 +22,13 @@ async function displayweather() {
   const city = document.getElementById("input").value;
   const cityWeather = await getWeatherFromCityApi(city);
 
-  //do so when user for example types la the output  is Los angeles, USA
+  //city infos
 
   document.getElementById("weatherinformationforcity").innerHTML =
-    "Weather information for " + city;
+    "Weather information for " +
+    cityWeather.location.name +
+    ", " +
+    cityWeather.location.country;
 
   //////////////////////////////////////////////////////////////////////
 
